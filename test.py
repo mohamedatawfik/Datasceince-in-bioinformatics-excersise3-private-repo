@@ -14,8 +14,15 @@ y = [random.uniform(0, 10) for i in range(points)]
 #  plotthe datapoints as dots
 plt.scatter(x, y, label='Random Data', color='blue', marker='o')
 
+# plot seacond 10 random datapoints
+x2 = [random.uniform(0, 10) for i in range(points)]
+y2 = [random.uniform(0, 10) for i in range(points)]
+
+# plot a line for the seond randomly generated data datapoints
+plt.plot(x2, y2, label='Second Random Data', color='orange')
+
 # add labels to the x- and y-axis and a title
-plt.title('Scatter Plot of Random Data')
+plt.title('Scatter Plot of Random Data and Line from Second Random Data')
 plt.xlabel('X-axis')
 plt.ylabel('Y-axis')
 
